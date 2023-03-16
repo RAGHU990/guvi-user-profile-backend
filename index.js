@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(cors({
  origin:"*",
 }));
+app.options('*', cors());
 
 const bodyParser = require('body-parser')
 
